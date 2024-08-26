@@ -1,4 +1,7 @@
 // lower bound
+
+// lower bound always ends up at hi and upper bound always ends up at lo
+
 // given a sorted integer array and an integer "x", find the lower bound of x
 #include<iostream>
 using namespace std;
