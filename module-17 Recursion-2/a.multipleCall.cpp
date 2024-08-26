@@ -8,7 +8,7 @@ int fun(int n){
     if(n==1) return 1;
     else if(n==2) return 1;
     else return fun(n-1) + fun(n-2);
-    // note that pehle, fun(n-1) ka call complete nhi ho jata tab tak fun(n-2) ka call nhi lgega
+    // note that, jab tak fun(n-1) ka call complete nhi ho jata tab tak fun(n-2) ka call nhi lgega
     // see euler's tour tree
 }
 
