@@ -13,6 +13,9 @@ int main(){
     // cin>>s; // this will only work if given string have no space
     // so we use getline(cin, string name);
     getline(cin,s);
-    cout<<"your string is: "<< s;
+    cout<<"your string is: "<< s << endl;
+
+    cin>> s;
+    cout<< s; // if we input a sentence in this s, it will only generate output of first word
 
 }
