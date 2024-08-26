@@ -28,7 +28,7 @@ int main(){
             flag = false; break;
         }
     }
-    // now we have kmin is integer then we have to proceed differently and if it is decimal number then we have to approach differently, for kmax, it doesn't matter, we just have to return int(kmax) for upper limit of the range
+    // now if kmin is integer then we have to proceed differently and if it is decimal number then we have to approach differently, for kmax, it doesn't matter, we just have to return int(kmax) for upper limit of the range
     if(flag==false) cout<<"no possible value of k";
     else{
         // 2 case possible, either kmin == kmax or kmin < kmax
