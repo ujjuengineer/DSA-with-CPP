@@ -10,6 +10,14 @@ int fibo(int n){
     return fibo(n-1) + fibo(n-2);
 
     // note that jab tak fibo(n-1) pura calculate na ho jaae, tab tak fibo(n-2) ka calculation start nhi hoti
+
+    /*
+    we can do this as 
+    int left_call = fibo (n-1);
+    int right_call = fibo (n-2);
+    return left_call + right_call;
+    
+    */
 }
 
 int main(){
