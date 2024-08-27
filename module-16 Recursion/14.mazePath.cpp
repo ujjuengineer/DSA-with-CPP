@@ -10,6 +10,7 @@ using namespace std;
 int call(int minr, int maxr, int minc, int maxc){
     // base case
     if(minr==maxr || minc==maxc) return 1;
+    // base case is like this because, as soon the man reaches maxr or maxc, he will remains with only ways to reach the destination, as he can't go left or up
 
     int ways = call(minr+1, maxr, minc, maxc) + call(minr, maxr, minc+1, maxc);
     return ways;
