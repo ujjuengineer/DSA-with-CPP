@@ -4,17 +4,26 @@
 // note that number of subsets = 2 to the power n where n = number of elements in sets
 
 
-/*
-traditional method to do so is, make 2 calls, in first call, upend the character of original string and in second call don't add the character. */
+
 
 
 #include<iostream>
 using namespace std;
 
-void print(string original, string ans){
-    
+void printSubsets(string original, string ans){
+    // base case
+    if(original.size()==0){
+        cout<< ans<< " ";
+        return;
+    }
+    /* ek call lgana hai ans me bina add kiye and dushri call lgana ans me add kr k */
+    printSubsets(original.substr(1), ans);
+    printSubsets(original.substr(1), ans+=original[0]);   
 }
 
+
 int main(){
-    
+    string original = "abc";
+    string ans = "";
+    printSubsets(original, ans);
 }
