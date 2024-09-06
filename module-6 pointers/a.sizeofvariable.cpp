@@ -1,5 +1,5 @@
-/* 1 bytes = 4 bits --> (2 to the power 4)/2 = 2 to the power 3 --> so any datatype of size 4 bits can store number from 
-(-2 to the power 3) to {(2 to the power 3)-1}, -1 iss liye kyuki bich me ek zero v aa jata hai */
+/* 1 bytes = 8 bits --> (2 to the power 8)/2 = 2 to the power 4 --> so any datatype of size 8 bits can store number from 
+(-2 to the power 4) to {(2 to the power 4)-1}, -1 iss liye kyuki bich me ek zero v aa jata hai */
 
 // we use sizeof to know the size of the variable
 #include<iostream>
