@@ -1,3 +1,6 @@
+// mergersort is stable sort
+
+
 /* time complexity of bubble, selection, insertion sort is O(n square)
     where as the time complexity of inbuilt sort is O(n log n)
     
