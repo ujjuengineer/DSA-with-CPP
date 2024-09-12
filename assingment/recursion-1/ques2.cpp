@@ -7,14 +7,15 @@ int fun(int n, int &step){
     if(n==1)return 1;
     if(n==2) return 2;
     if(n<1) return 0; 
-    // step = fun(n-1, step) + fun(n-2, step);
+    step = fun(n-1, step) + fun(n-2, step) ;
 
-    // another way
-    int a = fun(n-1, step); // above meathod me v pehle first called function pura calculate hota hai and then second called function pe jaaenge
-    int b = fun(n-2, step);
-    step = a + b;
+    // // another way
+    // int a = fun(n-1, step); // above meathod me v pehle first called function pura calculate hota hai and then second called function pe jaaenge
+    // int b = fun(n-2, step);
+    // step = a + b;
     return step;
 }
+
 
 int main(){
     int n = 4;

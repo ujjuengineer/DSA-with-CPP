@@ -1,1 +1,0 @@
-// given a positive integer, return true if it is a power of 2
