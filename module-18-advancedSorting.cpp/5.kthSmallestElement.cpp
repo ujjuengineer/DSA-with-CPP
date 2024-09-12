@@ -1,7 +1,9 @@
+// write a programe to find kth smallest element
 #include<iostream>
+#include<vector>
 using namespace std;
 
-int partition(int arr[], int si, int li){
+int helper(int arr[], int si, int li){
     int pivotelement = arr[si];
     int count = 0;
     for(int i = si+1; i<=li; i++){
@@ -25,24 +27,20 @@ int partition(int arr[], int si, int li){
     }
     return pivotidx;
 }
-
-void quicksort(int arr[], int si, int li){
-    // base case
-    if(si>=li) return;
-
-    int pi = partition(arr, si, li);
-
-    quicksort(arr, si, pi-1);
-    quicksort(arr, pi+1, li);
+int kthSmallest(int arr[], int fi, int li, int k){
+    int pi = helper(arr, fi, li);
+    if(pi+1==k) return arr[pi];
+    else if(pi+1 > k) return kthSmallest(arr, fi, pi-1, k);
+    else return kthSmallest(arr, pi+1, li, k);
 }
-
 int main(){
-    int arr[]={3, 4, 6, 2, 1, 4 };
+    int arr[]={1,9,3,5,7,8,4,3,2,6};
     int n = sizeof(arr)/sizeof(arr[0]);
 
-    quicksort(arr, 0, n-1);
-
-    for(int i = 0; i< n; i++){
+    for(int i=0; i<n; i++){
         cout<< arr[i]<<" ";
     }
+    cout<< endl<<endl;
+    int k = 6;
+    cout<< kthSmallest(arr,0,n-1,k);
 }

@@ -32,11 +32,7 @@ void merge(vector<int>& v1, vector<int>& v2, vector<int>& v){
         v[k++]=v2[j++];
     }
 
-    for(int ele: v){
-        cout<< ele<<" ";
-    }
-    cout<< endl<< endl;
-    return;
+    
 }
 
 
@@ -68,8 +64,8 @@ void helper( vector<int>& v ){
 }
 
 int main(){
-    // int arr[]={5,1,3,0,4,9,6};
-    int arr[]={5,1,8,2};
+    int arr[]={5,1,3,0,4,9,6};
+    // int arr[]={5,1,8,2};
     int n = sizeof(arr)/sizeof(arr[0]);
     
     // we can directly fill the value of array into a vector
