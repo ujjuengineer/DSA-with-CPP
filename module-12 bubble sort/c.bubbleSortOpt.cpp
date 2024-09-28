@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 int main(){
-    int arr[] = {1,2,3,6,5,4};
+    int arr[] = {4,5,9,6,2};
     int n = sizeof(arr)/sizeof(arr[0]);
 
     // in this optimised version we will create a check mark to check wether our array is sorted now or not, if it is then we will break the loop
