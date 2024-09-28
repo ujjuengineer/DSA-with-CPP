@@ -8,6 +8,7 @@ int main(){
     int arr[]={-4,1,9,3,7,2,6,4,-5,3,2};
     int n = sizeof(arr)/sizeof(arr[0]);
     
+    
     for(int i=1; i<n; i++){
         int ptr = i;
         while(arr[ptr]<arr[ptr-1] && ptr>0){
