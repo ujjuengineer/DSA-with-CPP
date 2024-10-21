@@ -33,7 +33,7 @@ int main(){
             }
         }
     cout<<"\n";
-        // multiplying matrix
+        // multiplying matrix 
         for(int i=0; i<m; i++){
             for(int j=0; j<q; j++){
                 res[i][j]=0;
@@ -42,7 +42,7 @@ int main(){
                 }
             }
         }
-        // printing multiplication
+        // printing multiplication 
         cout<<"multiplication of the matrix is "<<"\n"; 
         for(int i=0; i<m; i++){
             for(int j=0; j<q; j++){

@@ -7,7 +7,7 @@ int main(){
     // so here we have total 12 character including 1 space between ujjwal and kumar
     // but in actual string str have stored one extra character at end that is null character \0;
 
-    // we can print this string just like array
+    // we can print this string just like array 
     cout<< str[0]<<endl;
     cout<< str[11]<<endl;
 

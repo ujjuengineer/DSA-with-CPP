@@ -6,7 +6,7 @@ int main(){
 
 
     arr[0]=1; // first dabbe me 1 daal diya
-    arr[4] = 4; // 4th dabbe me 4 daal diya, similarly we can store different values in different dabba
+    arr[4] = 4; // 5th dabbe me 4 daal diya, similarly we can store different values in different dabba
     cout<<arr[4]<<' '<<arr[0]<<endl<<endl;
     
 

@@ -8,7 +8,7 @@ int main(){
 
     // we can use s.substr(idx,length) to get any part of the string
     cout<< s.substr(2,3); // it will print 3 element from index 2 and onward
-cout<<endl<<endl;
+    cout<<endl<<endl;
 
 
     // Question: input a string of even length and return the second half of that string using inbuilt substr

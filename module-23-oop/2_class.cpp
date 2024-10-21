@@ -1,0 +1,34 @@
+// we can also create array of many classes
+#include<iostream>
+using namespace std;
+
+class player{
+    public:
+    string name; // these are called data members
+    int health;
+    int damage;
+};
+
+int main(){
+    player pla[10]; // this array store 10 player details
+    
+    pla[0].name = "Ujjwal Sharma";
+    pla[0].health = -7;
+    pla[0].damage = 100;
+
+    pla[1].name = "Rasshi Sharma";
+    pla[1].health = 100;
+    pla[1].damage = 0;
+
+    pla[2].name = "Ram Sharma";
+    pla[2].health = 89;
+    pla[2].damage = 11;
+
+
+    // we can print our objects data using loop 
+    for(int i = 0; i<=2; i++){
+        cout << pla[i].name<<",";
+        cout << pla[i].health<<",";
+        cout << pla[i].damage<<endl;
+    }
+}

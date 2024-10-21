@@ -3,12 +3,13 @@
 // lower bound always ends up at hi and upper bound always ends up at lo
 
 // given a sorted integer array and an integer "x", find the lower bound of x
+
 #include<iostream>
 using namespace std;
 int main(){
     int arr[]={1,2,4,5,9,15,18,21,24};
     int n = sizeof(arr)/sizeof(arr[0]);
-    // let targer is 20, so we have to return number just less than 20
+    // let target is 20, so we have to return number just less than 20
     int target;
     cout<<"enter target: ";
     cin>>target;
@@ -29,5 +30,4 @@ int main(){
     }
     // agar target nhi mila then last me jaha hi hoga whi mera lower bound hoga
     if(flag==false) cout<< arr[hi];
-    
 }

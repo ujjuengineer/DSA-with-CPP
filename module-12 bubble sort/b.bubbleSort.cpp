@@ -7,7 +7,7 @@ int main(){
 // algo: we will pass through vector and check if next element is smaller than current element or not, if it is then swap, doing this through out the array will put my greatest element at last. we will do the same untill my array is sorted, to do so we have to pass through the array n-1 times, so we create a outer loop which will run n-1 times. after every paas, we will decrease the ittration of the loop by 1.
 
 
-    // bahar wala loop bas number of passes decide krega
+    // after every iteration the max element are taking place at last, and we have total n element, so we have to put n-1 element at last and hence outer loop will iterate n-1 times
     for(int i=0; i<n-1; i++){ // n-1 passes
         
         for(int j=0; j<n-1-i; j++){

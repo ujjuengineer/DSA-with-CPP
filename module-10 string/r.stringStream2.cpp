@@ -1,4 +1,4 @@
-// given a sentence "str", return the world that is occurring most number of times in that sentence
+// given a sentence "str", return the world that is occurring most number of times in that sentence 
 #include<iostream>
 #include<sstream>
 #include<string>
