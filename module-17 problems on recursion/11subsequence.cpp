@@ -35,11 +35,13 @@ int main(){
     cout<<"enter n: ";
     cin>>n;
     
+    // creating an array of n natural number 
     int arr[n];
     for(int i=1; i<=n; i++){
         arr[i-1]=i;
     }
 
+    // k is the size of subsequence
     int k;
     cout<<"enter k: ";
     cin>> k;

@@ -1,4 +1,4 @@
-// remove all occurrece of 'a' from a string
+// remove all occurrece of 'a' from a string 
 
 #include <iostream>
 using namespace std;

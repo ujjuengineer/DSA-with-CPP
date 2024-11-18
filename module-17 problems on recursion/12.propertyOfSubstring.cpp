@@ -14,8 +14,8 @@ int main(){
     // substr(0,2) means substring of length 2 from index 0
     // substr(2) means substring from index 2 to end, including index 2 element
     
-    string right = str.substr(index+1);
+    string right = str.substr(index+1); 
 
-    string ans = left + right;
+    string ans = left + right; 
     cout<< ans<<endl;
 }
