@@ -17,7 +17,7 @@ class player{
     int health;
     int score;
     
-    // note that we can't define an array of fixed length in class, if we try to do this then it will show error
+    // note that we can't define an array of fixed length in class, if we try to do this then it will show error 
 }; // we need to add semicoln at the end of the class
 
 int main(){
@@ -33,17 +33,17 @@ int main(){
 
     // we can create such many objects
 
-    player rasshi;
-    rasshi.name = "rasshi shrivastav";
-    rasshi.health = 100;
-    rasshi.score = 100;
+    player ram;
+    ram.name = "ram";
+    ram.health = 100;
+    ram.score = 100;
 
     player ganesh;
-    ganesh.name = "ganesh gyandu";
+    ganesh.name = "ganesh ";
     ganesh.health = 90;
     ganesh.score = 80;
 
-    // now we can print all those objects data
+    // now we can print all those objects data 
 }
 
 /*  

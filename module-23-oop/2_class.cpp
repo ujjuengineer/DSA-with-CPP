@@ -24,7 +24,7 @@ int main(){
     pla[2].name = "Ram Sharma";
     pla[2].health = 89;
     pla[2].damage = 11;
-
+    cout <<"the size of the player is :" <<  << endl;
 
     // we can print our objects data using loop 
     for(int i = 0; i<=2; i++){
