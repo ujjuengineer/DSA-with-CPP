@@ -5,6 +5,7 @@ using namespace std;
 class player{
     public:
     string name; // these are called data members
+    // if we make health "private:" then we will be unable to access it from main
     int health;
     int damage;
 };
@@ -16,7 +17,7 @@ int main(){
     pla[0].health = -7;
     pla[0].damage = 100;
 
-    pla[1].name = "Rasshi Sharma";
+    pla[1].name = "Rass Sharma";
     pla[1].health = 100;
     pla[1].damage = 0;
 

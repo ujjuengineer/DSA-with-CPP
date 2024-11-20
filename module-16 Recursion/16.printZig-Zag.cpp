@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-// if input is 1 :  1 1 1
+// if input is 1 : 1 1 1
 // if input is 2 : 2 1 1 1 2 1 1 1 2
 // if input is 3 : 3 2 1 1 1 2 1 1 1 2 3 2 1 1 1 2 1 1 1 2 3
 // if input is 4 : 4 3 2 1 1 1 2 1 1 1 2 3 2 1 1 1 2 1 1 1 2 3 4.. repeat

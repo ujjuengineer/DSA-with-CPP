@@ -14,7 +14,7 @@ int main(){
     // 1 2 3 4
     // 5 6 7 8
     // 9 10 11 12
-    // we hve to print 1 2 3 4 6 5 9 2 7 4 3 4 3 5 3 8
+    // we hve to print 1 2 3 4 8 12 11 10 9 5 6 7
 
     // to do so we will define minr, maxr, minc, maxc
     int n = 3, m= 4;
