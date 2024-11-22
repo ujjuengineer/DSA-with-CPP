@@ -17,7 +17,7 @@ class calculator {
 
 int main() {
 
-    // created an object calci
+    // created an object calci 
     calculator calci;
 
     calci.a = 6;

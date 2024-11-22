@@ -5,8 +5,8 @@ using namespace std;
 
 class student {
     public: 
-    string name; // these are called data member
-    int health; // data member
+    string name; // these are called data member 
+    int health; // data member 
     
     // this is class function, i.e., class ke andar ka function
     void showHealth(){
