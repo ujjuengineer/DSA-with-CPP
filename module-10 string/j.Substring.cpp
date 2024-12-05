@@ -3,7 +3,7 @@
 using namespace std;
 int main(){
     string s = "012345678";
-    cout<< s.substr(4); // it will print all the character from 4th index to onward;
+    cout<< s.substr(4); // it will print all the character from 4th index to onward; 
     cout<< endl;
 
     // we can use s.substr(idx,length) to get any part of the string

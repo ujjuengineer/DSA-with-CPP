@@ -1,4 +1,4 @@
-// count the number of elements in given array greater than a given number x
+// count the number of elements in given array greater than a given number x 
 #include<iostream>
 using namespace std;
 int main(){

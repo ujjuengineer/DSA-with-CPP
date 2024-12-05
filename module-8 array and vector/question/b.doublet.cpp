@@ -1,4 +1,4 @@
-// find the doublet in the array whose sum is equal to the given value x;
+// find the doublet in the array whose sum is equal to the given value x; 
 #include<iostream>
 #include<vector>
 using namespace std;

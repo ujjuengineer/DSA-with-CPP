@@ -1,5 +1,5 @@
 // write a program to add two matrices
-// to add 2 matrices, the order of the matrices must be same
+// to add 2 matrices, the order of the matrices must be same 
 #include<iostream>
 using namespace std;
 int main(){

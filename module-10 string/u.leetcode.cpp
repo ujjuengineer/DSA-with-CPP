@@ -15,9 +15,9 @@ int main(){
     for(int i=0; i<n; i++){
         cin>> v[i];
     }
-    sort(v.begin(), v.end());
+    sort(v.begin(), v.end()); 
  
-    // algorithm : we will sort the vector and then compare first and last string of the vector only. all the elements that are similar in first and last string, will also be present in remaining strings
+    // algorithm : we will sort the vector and then compare first and last string of the vector only. all the elements that are similar in first and last string, will also be present in remaining strings 
 
     // NOte: we can get the size of first and last string as v[0].size and v[n-1].size
     string first = v[0];

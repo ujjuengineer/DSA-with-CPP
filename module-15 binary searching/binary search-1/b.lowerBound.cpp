@@ -20,7 +20,7 @@ int main(){
     while(lo<=hi){
         int mid = lo + (hi-lo)/2;
         if(arr[mid]==target){
-            // agar target mil gya then usse just ek kam print kr do
+            // agar target mil gya then usse just ek kam print kr do 
             cout<< arr[mid-1];
             flag = true;
             break;

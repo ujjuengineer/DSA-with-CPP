@@ -10,9 +10,9 @@ int main(){
         cout<< v[i]<< " ";
     }
     cout<<endl;
-// the above code will work only when we have defined the size of vector
+// the above code will work only when we have defined the size of vector 
 
-// taking input without defining size
+// taking input without defining size 
     vector<int> v2;
     int n;
     cout<<"enter the number the elements you want to enter: ";

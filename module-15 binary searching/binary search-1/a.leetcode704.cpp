@@ -9,7 +9,7 @@ void swi(int a, int b, int nums[]){
 int main(){
     int nums[]= {1,1,1,2,2,3,4,4,4,4};
     int n = 10;
-        int count = 0, res = 0;
+        int count = 0, res = 0; 
         int target = INT_MIN;
         int opposite = 0;
         for(int i=0; i<n-opposite; i++){

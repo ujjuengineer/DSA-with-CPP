@@ -1,4 +1,4 @@
-// find the last occurrence of x in the array
+// find the last occurrence of x in the array 
 #include<iostream>
 #include<vector>
 using namespace std;

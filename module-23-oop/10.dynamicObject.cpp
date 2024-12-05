@@ -52,4 +52,16 @@ int main() {
     // another way to do this is follow
     ptr->setName("mum");
     cout << "new name is : "<< ptr->getName() << endl;
+
+
+
+    // important note : 
+
+    /*
+    if we have int arr[] = {1,2,3,4} and int brr[4]; then we can't directly assign the value of arr into brr using "=" operator, i.e., brr = arr;
+    
+    but if we have 2 object of similar class then we can do the same
+    student ujjwal; student akash;
+    we can transfer the data of ujjwal to akash using "=" operator, akash = ujjwal;
+    */
 }

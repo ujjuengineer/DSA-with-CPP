@@ -33,6 +33,7 @@ class player {
             return level;
         }
     };
+    // Helmet class yaha bna hai to iska object v yhi construct hoga
 
     // player class ke keys, (data member)
     int health;
@@ -63,12 +64,15 @@ class player {
     }
 
 
-    // since Helmet is a private class, so we can't create an object of Helmet in main function and send to setHelmet function, so we send an int value to the setHelmet function and set the hp and level accordingly inside this setHelmet function.
+    // since Helmet iss player object ke andar bna hai, and agar ye public hota to we can create an object of its like player::Helmet level1; 
+
+    // since helmet is a private class, so we can't access its function from the main, but we can access its public function from this class, so we send an int value to the setHelmet function and set the hp and level accordingly inside this setHelmet function. 
+
     void setHelmet(int level) {
         // ek helmet type pointer bnaya jisme new helmet create kr liya for dynamic memory allocation
         Helmet* helmet = new Helmet; 
         // now we know this *helmet will act as new object of Helmet
-        (*helmet).setLevel(level);
+        (*helmet).setLevel(level); // helmet -> setlevel(level);
         int hp = 0;
         if(level == 1) hp = 20;
         else if(level == 2) hp = 30;

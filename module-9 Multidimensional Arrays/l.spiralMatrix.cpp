@@ -3,7 +3,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-// 1 2 3 4 5
+// 1 2 3 4 5 
 // 6 7 8 9 0   we have to print it as 1 2 3 4 5 0 6 7 7 3 5 9 3 
 // 3 5 6 4 6                                6 7 8 9 4 6 5...
 // 9 5 3 7 7

@@ -6,9 +6,9 @@
 using namespace std;
 int main(){
     string str = "i am ujjwal kumar, i m ruler of this";
-    stringstream ss(str);
-    string temp;
-    vector<string> v;
+    stringstream ss(str); 
+    string temp; 
+    vector<string> v; 
     while(ss>>temp){
         v.push_back(temp);
     }

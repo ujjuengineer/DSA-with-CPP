@@ -3,10 +3,10 @@
 using namespace std;
 
 void display(int a[]){ // yaha 'a' is acting as a pointer
-    //cout<< sizeof(a)/sizeof(a[0]); this will generate warning
+    //cout<< sizeof(a)/sizeof(a[0]); this will generate warning 
 }
 
-void fun(int a[], int size){
+void fun(int a[], int size){ 
     for(int i=0; i<=size-1; i++){
         cout<<a[i]<<' ';
     }

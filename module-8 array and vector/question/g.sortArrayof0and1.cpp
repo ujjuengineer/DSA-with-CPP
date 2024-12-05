@@ -14,17 +14,17 @@ void swi(vector<int>& v, int a, int b){
         v[i]=v[i]-v[j];
     }
 }
-void rearr(vector<int>& v, int n){
-    int a = 0, b = n - 1;
-    while(a<b){
-        if(v[a]==0)a++;
-        else if(v[b]==1)b--;
-        else if(v[a]==1 && v[b]==0){
-            // swi(v,a,b); we can simply do
-            v[a]=0; v[b]=1;
-        }
-    }
-}
+void rearr(vector<int>& v, int n){ 
+    int a = 0, b = n - 1; 
+    while(a<b){ 
+        if(v[a]==0)a++; 
+        else if(v[b]==1)b--; 
+        else if(v[a]==1 && v[b]==0){ 
+            // swi(v,a,b); we can simply do 
+            v[a]=0; v[b]=1; 
+        } 
+    } 
+} 
 int main(){
     vector<int> v;
     v.push_back(1);

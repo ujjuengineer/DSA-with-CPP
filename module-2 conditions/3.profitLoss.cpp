@@ -15,6 +15,4 @@ int main(){
     else {
         cout<<"profit = "<<sp-cp;
     }
-
-    
 }

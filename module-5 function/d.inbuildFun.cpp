@@ -7,5 +7,6 @@ int main(){
     cin>>x>>y;
     cout<<min(x,y)<<endl;
     cout<<max(x,y)<<endl;
+    cout << abs(x) << endl;
     cout<<sqrt(x);
 }

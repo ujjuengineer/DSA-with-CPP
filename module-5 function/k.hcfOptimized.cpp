@@ -9,7 +9,7 @@ int hcf(int x, int y){
             break;
         }
     }
-    return fac;
+    return fac; 
 }
 
 int main(){
