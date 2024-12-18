@@ -3,7 +3,7 @@
 
 /*
     recursion breakdown : 
-        to move n disk from source to destination, we must first move n-1 disk from source to helper, and then last disk from source to helper and then n-1 disk from helper to destination
+        to move n disk from source to destination, we must first move n-1 disk from source to helper, and then last disk from source to destination and then n-1 disk from helper to destination
 */
 
 #include<iostream>

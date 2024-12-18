@@ -18,8 +18,8 @@ int gcd(int a, int b){
     return gcd(b%a, a);
 }
 int main(){
-    int a = 9;
-    int b = 6;
+    int a = 6;
+    int b = 9;
 
     cout<< "HCF of "<< a << " and "<< b <<" is "<< gcd(a,b)<< endl;
 }

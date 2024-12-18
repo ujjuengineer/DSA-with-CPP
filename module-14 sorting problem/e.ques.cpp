@@ -17,7 +17,7 @@ int main(){
     float kmax = float(INT_MAX); 
     bool flag = true;
     // we have to find intersection of all the possible range of k so we need max of all possible kmin, and min of all possible kmax
-    for(int i=0; i<n-1; i++){
+    for(int i=0; i<n-1; i++) {
         if((arr[i]<=arr[i+1])){
             kmax = min(kmax, (arr[i]+arr[i+1])/2.0);
         }

@@ -16,8 +16,7 @@ class player{
     string name; // these are called data members
     int health;
     int score;
-    
-    // note that we can't define an array of fixed length in class, if we try to do this then it will show error 
+     
 }; // we need to add semicoln at the end of the class
 
 int main(){

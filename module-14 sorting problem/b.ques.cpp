@@ -4,8 +4,8 @@
 #include<climits>
 using namespace std;
 int main(){
-    // let the following array
-    int arr[]={19,12,23,8,-2,-8,16};
+    // let the following array 
+    int arr[]={19,12,23,8,-2,-8,16}; 
     int n = sizeof(arr)/sizeof(arr[0]);
     // we have to replace -8-->0 , -2-->1, 8-->2, 12-->3, 16-->4, 19-->5, 23-->6 in the same order ie., 
     // {5, 3, 6, 2, 1, 0, 4}

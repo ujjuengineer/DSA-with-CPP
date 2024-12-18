@@ -25,13 +25,13 @@ class player {
             this->level = level;
         }
 
-        // getter
+        // getter 
         int getHp(){
             return hp;
         }
         int getLevel(){
             return level;
-        }
+        } 
     };
     // Helmet class yaha bna hai to iska object v yhi construct hoga
 

@@ -1,12 +1,12 @@
 
 
 
-//LeetCode-33/81/658/633/
-// -> 1011/875/2187/2226
+//LeetCode- 33/81/658/633/ 
+// -> 1011/875/2187/2226 
 
 
 
-// search in rotated sorted array
+// search in rotated sorted array 
 #include<iostream>
 using namespace std;
 int main(){

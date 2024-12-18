@@ -7,11 +7,11 @@ void pip(int n){
     // base case
     if(n==0) return;
 
-    cout<<"pre "<< n<< endl;
+    cout<<"pre "<< n<< ", ";
     pip(n-1);
-    cout<<"In "<< n<< endl;
+    cout<<"In "<< n<< ", ";
     pip(n-1);
-    cout<<"post "<< n<< endl;
+    cout<<"post "<< n<< ", ";
 }
 
 int main(){

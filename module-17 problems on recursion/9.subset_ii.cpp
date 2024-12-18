@@ -12,7 +12,7 @@ void remove(string original, int n, string ans, bool flag){
     }
     
     char ch = original[0];
-    // if size if 1 then we can't compare it with next char
+    // if size is 1 then we can't compare it with next char
     if(original.size()==1){
         if(flag==true)remove(original.substr(1), n, ans+ch,true);
         remove(original.substr(1), n, ans, false);
