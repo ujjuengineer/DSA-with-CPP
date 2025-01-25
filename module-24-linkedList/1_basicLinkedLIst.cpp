@@ -18,10 +18,12 @@ int main() {
     Node b(20);
     Node c(30);
     Node d(40);
+    Node e(50);
 
     a.Next = (&b);
     b.Next = (&c);
     c.Next = (&d);
+    d.Next = &e;
 
     // now we can access value of b using a and value of c using b and so on 
     // note that node* next is a pointer, so a.Next , b.Next is also a pointer

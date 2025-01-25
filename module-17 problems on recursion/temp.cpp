@@ -1,33 +1,39 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
+#include <climits>
+#include <algorithm>
 using namespace std;
 
-void subarray(int arr[], int idx, int n, vector<int> ans){
-    // base case
-    if(idx == n){
-        for(int ele : ans) cout << ele;
-        cout << endl;
-        return;
-    }
+// Function to calculate the minimum possible difference
+int findMinDifference(vector<pair<int, int> >& gems) {
+    int n = gems.size();
+    int minDiff = INT_MAX;
 
-    subarray(arr, idx+1, n, ans); // calling without adding
-    // 2nd call me condition daalni hai
-    if(ans.size()==0){
-        ans.push_back(arr[idx]);
-        subarray(arr, idx+1, n, ans);
-    }
-    else {
-        int i = arr[idx-1];
-        int j = ans[ans.size()-1];
-        if(i==j){
-            ans.push_back(arr[idx]);
-            subarray(arr, idx+1, n, ans);
+    // Check all combinations of chest values
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            int maxChest1 = max(gems[i].first, gems[j].first);
+            int maxChest2 = max(gems[i].second, gems[j].second);
+            minDiff = min(minDiff, abs(maxChest1 - maxChest2));
         }
     }
+    return minDiff;
 }
 
 int main() {
-    int arr[] = {1,2,3,4};
-    vector<int> ans;
-    subarray(arr, 0, 4, ans);
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int n;
+        cin >> n;
+        vector<pair<int, int> > gems(n);
+
+        for (int i = 0; i < n; i++) {
+            cin >> gems[i].first >> gems[i].second;
+        }
+
+        cout << findMinDifference(gems) << endl;
+    }
+    return 0;
 }

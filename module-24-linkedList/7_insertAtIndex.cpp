@@ -20,7 +20,7 @@ public:
     int size;
 
     // constructor
-    LinkedList(){ // jav v koi linked list bnega to 0 size ka hoga starting me
+    LinkedList(){ // jav v koi linked list bnega to 0 size ka hoga starting me 
         head = tail = NULL;
         size = 0;
     }
