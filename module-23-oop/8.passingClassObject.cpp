@@ -61,6 +61,7 @@ int main() {
     cout << maxGrade(ujjwal, ram) << endl; // passed a = ujjwal, b = ram
 
     // creating another object 
+    // since we can't directly cout any class, so firstly we must store the return of this function in another object and then access it
     student maxGr = maxGradeObject(ram, ujjwal);
     cout << maxGr.getName() << " have more grade = "<< maxGr.getGrade() << endl;
 }    

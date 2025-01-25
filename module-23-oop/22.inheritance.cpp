@@ -20,7 +20,10 @@ class vehicle { // this is called base class or parent class
 };
 
 // if you notice car and bike have very similar data function, so rather than defining them in both the class we can create an anoter class named vehicle and inherit those data function inside of the car and bike by making them child of vehicle
-class car : public vehicle { // this means car inherit vehicle or we can say car is a child of vehicle, also called as derived class or child class
+
+
+class car : public vehicle { 
+    // this means car inherit vehicle or we can say car is a child of vehicle, also called as derived class or child class
     // note that data member k saath saath member function v inherit ho jata hai
     public:
     int sterringSize;
@@ -37,8 +40,8 @@ class bike : public vehicle{
 
 int main() {
     // lets create a object of car
-    car bmw; // now we can assign all the property inherited by its parents in the 
-             // same way
+    car bmw; // now we can assign all the property inherited by its parents in the same way
+             
     bmw.sterringSize = 10;
     bmw.tyreSize = 6;
     cout << endl << bmw.getTyreSize() << endl;

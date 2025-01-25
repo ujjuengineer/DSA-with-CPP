@@ -2,7 +2,13 @@
 #include<string>
 using namespace std;
 
-/* class is blueprint and object is an instance of the class */
+/* class is blueprint and object is an instance of the class 
+
+    A class is like a blueprint or a template that defines the structure and behavior of objects.
+    
+    When you create an object, you allocate memory for it, give it specific values for its attributes, and can use the methods defined in the class.
+
+*/
 
 class player{
     public:  // access modifier : public/private/protected

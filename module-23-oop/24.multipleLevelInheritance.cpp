@@ -4,13 +4,13 @@
 using namespace std;
 
 class A {
-    public : // can be accessed, can be inherited
+public : // can be accessed, can be inherited
     int A_ka_public;
 
-    protected: // can't be accessed, can be inherited
+protected: // can't be accessed, can be inherited
     int A_ka_protected;
 
-    private: // can't be accessed, can't be inherited
+private: // can't be accessed, can't be inherited
     int A_ka_private;
 
 public:
@@ -21,7 +21,7 @@ public:
 };
 
 class B : protected A { // a ka public, a ka protected aaega, both as protected
-    public:
+public:
     int B_ka_public;
 
 public:
@@ -32,8 +32,8 @@ public:
 
 };
 
-class C : public B { // b ka public aaega as public, a ka public and a ka protected aaega as protected as they were protected inside B
-    public: 
+class C : public B { // b ka public aaega as public, a ka public and a ka protected aaega as protected as they were protected inside Bs 
+public: 
     int C_ka_public;
 
 public:

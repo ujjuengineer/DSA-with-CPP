@@ -30,4 +30,14 @@ int main(){
     
     hello ram(ujjwal); // this also create a deep copy
     cout << ram.a << endl;
+
+
+    // creating shallow copy
+    hello* ujju1 = new hello;
+    ujju1->a = 99;
+    
+    hello* ujju2 = new hello;
+    ujju2 = ujju1;
+
+    // now ujju2 is a shallow copy of ujju1, if you make any changes in ujju1, it will also reflect in ujju1 as well
 }

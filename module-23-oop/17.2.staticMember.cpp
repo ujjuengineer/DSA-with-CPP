@@ -3,13 +3,14 @@
 using namespace std;
 
 class bike {
+    private:
     static int numberOfBike; // since we have declared it as static, now its belong to this class, its value can't be changed using the object of the bike, it is a private member of bike
     
     
 
     public: 
     // seter
-    void setNumOfBike(int x) { 
+    static void setNumOfBike(int x) { 
         numberOfBike = x;
         // no need to do this->numberOfbike as the name is different;
     } 
@@ -50,7 +51,7 @@ int main() {
 
 
     // we can also set the numbe of bike using the call name
-    // bike::setNumOfBike(10); but only if setNumOfBike() is a static function
+    //bike::setNumOfBike(10); // but only if setNumOfBike() is a static function
     cout << "the number of bike become : "<< royalEnfield.getnumberOfBike();
 
 }
