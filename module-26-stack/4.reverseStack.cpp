@@ -3,7 +3,7 @@
 #include<stack>
 using namespace std;
 
-void print(stack<int> temp){
+void print(stack<int> temp) {
     // to pass the stack by reference use & 
     while(temp.size() != 0) {
         cout << temp.top() << " ";
@@ -40,5 +40,5 @@ int main() {
     
     // printing stack
     cout << "final stack : " ;
-    print(st);
+    print(st); 
 }

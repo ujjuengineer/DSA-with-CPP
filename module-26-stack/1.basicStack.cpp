@@ -18,7 +18,7 @@ int main() {
     cout <<"size of the stack is : "<< st.size() << endl; // 4
     // printing stack
     while(st.size() > 0){
-        cout << st.top() << endl; // print the top ele of the stack
+        cout << st.top() << endl; // print the top ele of the stack 
         st.pop();
     }
     cout <<"size of the stack is : "<< st.size() << endl;

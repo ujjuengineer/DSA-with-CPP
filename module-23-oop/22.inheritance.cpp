@@ -2,6 +2,15 @@
 #include<string>
 using namespace std;
 
+/*
+    1. single inheritance
+    2. Multiple inheritance : multiple base class , single derived class
+    3. Multi-level inheritance : consist multi level of inheritance, grandParents -> parents -> child
+    4. Hierarchical inheritance : single base class, multiple derived class
+    5. Hybrid inheritance : mixture 
+
+*/
+
 class vehicle { // this is called base class or parent class
     public:
     int tyreSize;

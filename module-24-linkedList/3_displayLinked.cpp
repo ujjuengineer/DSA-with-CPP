@@ -17,7 +17,7 @@ class LinedeList { // user defined data structure
     Node* head;
     Node* tail;
     int size;
-}
+};
 
 // function to print the linked list 
 void display(Node* head) {

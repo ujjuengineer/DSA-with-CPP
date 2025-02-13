@@ -1,82 +1,96 @@
 #include<iostream>
 using namespace std;
-
 class Node {
-public:
+    public:
     int val;
-    Node* next;
+    Node* Next;
 
-    // constructor
     Node(int val){
         this->val = val;
-        this->next = NULL;
+        this->Next = NULL;
     }
 };
 
-class LinkedList{
-public:
+class LinkedeList {
+    public:
     Node* head;
     Node* tail;
     int size;
 
-    // constructor
-    LinkedList(){
+    LinkedeList(){
         head = tail = NULL;
         size = 0;
     }
 
-    // insertAtEnd
-    void insertAtEnd(int val){
+    void insertAtTail(int val){
         Node* temp = new Node(val);
-        if(size==0) head = tail = temp;
+        if(size == 0) head = tail = temp;
         else {
-            tail->next = temp;
+            tail->Next = temp;
             tail = temp;
         }
         size++;
     }
 
-    // insertAtIndex
-    void insertAtIndex(int idx, int val) {
-        Node* temp = new Node(val);
-        Node* t = head;
-        for(int i = 1; i<=idx-1; i++) t = t->next;
-        temp->next = t->next;
-        t->next = temp;
-        size++;
-    }
-
-    // get element 
-    int getAtIdx(int idx){
-        Node* temp = head;
-        if(idx < 0 || idx > size-1) {
-            cout <<"invalid index" << endl;
-            return -1;
+    void insertAtHead(int val){
+        Node* temp = new Node(val); 
+        if(size == 0) head = tail = temp; 
+        else {
+            (*temp).Next = head;
+            head = temp; 
         }
-        for(int i = 0; i<idx; i++) temp = temp->next;
-        return temp->val;
-        
+        size++; 
+    } 
+    // 0 1 2 3 4 5 6 7 8
+    // i = 2
+    void insertAtIdx (int val, int idx) {
+        if(idx == 0) insertAtHead(val);
+        else if(idx == size) insertAtTail(val);
+        else {
+            Node* temp = new Node(val); 
+            Node* h = head;
+            for(int i = 0; i<idx-1; i++){
+                h = h->Next;
+            }
+            temp->Next = h->Next;
+            h->Next = temp;
+            size++;
+        }
     }
-
+    
     void display(){
-        Node* temp = head;
+        Node* temp = this->head;
         while(temp != NULL) {
-            cout << temp->val <<" ";
-            temp = temp->next;
+            cout << temp->val <<", ";
+            temp = temp->Next;
         }
         cout << endl;
     }
+
+    void getAtIdx(int idx) {
+        if(idx >= size) {
+            cout<< "invalid idx" << endl;
+            return;
+        }
+        Node* temp = this->head;
+        for(int i=1; i<=idx; i++){
+            temp = temp->Next;
+        }
+        cout<< temp->val <<endl;
+    }
+
 };
 
 int main() {
-    LinkedList ll;
-    ll.insertAtEnd(10);
-    ll.insertAtEnd(20);
-    ll.insertAtEnd(30);
-    ll.insertAtEnd(40);
-
-    ll.insertAtIndex(2,25);
-
+    LinkedeList ll;
+    ll.insertAtIdx(5,0);
+    ll.insertAtIdx(4,0);
+    ll.insertAtIdx(3,0);
+    ll.insertAtIdx(2,0); 
+    ll.insertAtIdx(1,0);
+    ll.insertAtIdx(0,0);
+    ll.insertAtIdx(63,1);
     ll.display();
-    cout << ll.getAtIdx(4);
+
+    ll.getAtIdx(6);
 }
