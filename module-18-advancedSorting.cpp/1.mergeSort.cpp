@@ -8,8 +8,8 @@
     also the time complexity of quick sort is O(n log n)*/
 
 
-// merge sort algo
-#include<iostream>
+// merge sort algo 
+#include<iostream> 
 #include<vector>
 using namespace std;
 
@@ -31,8 +31,6 @@ void merge(vector<int>& v1, vector<int>& v2, vector<int>& v){
     while(j<v2.size()){
         v[k++]=v2[j++];
     }
-
-    
 }
 
 

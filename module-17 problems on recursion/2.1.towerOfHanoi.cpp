@@ -16,5 +16,5 @@ int hanoi(int n, char s, char h, char d) {
 }
 
 int main() {
-    cout << hanoi(3,'a','b','c');
+    cout << hanoi(4,'a','b','c');
 }
