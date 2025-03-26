@@ -18,14 +18,14 @@ int main(){
     pla[0].health = -7;
     pla[0].damage = 100;
 
-    pla[1].name = "Rass Sharma";
+    pla[1].name = "siddhi Sharma";
     pla[1].health = 100;
     pla[1].damage = 0;
 
     pla[2].name = "Ram Sharma";
     pla[2].health = 89;
     pla[2].damage = 11;
-    cout <<"the size of the player is :" <<  << endl;
+    cout <<"the size of the player is :" <<" " << endl;
 
     // we can print our objects data using loop 
     for(int i = 0; i<=2; i++){
